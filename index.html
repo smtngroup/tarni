@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Tarni Panchang official website. Access Privacy Policy, Terms & Conditions, About Us and Contact information."
+  />
+
+  <meta
+    name="theme-color"
+    content="#35154F"
+  />
+
+  <title>Tarni Panchang | Official Website</title>
+
+  <style>
+    :root {
+      --primary: #35154f;
+      --primary-light: #5b2a86;
+      --gold: #d79a27;
+      --gold-light: #f4cf7e;
+      --cream: #fff9ee;
+      --cream-dark: #f7f2e8;
+      --text: #4b3d50;
+      --text-secondary: #756878;
+      --border: rgba(181, 125, 52, 0.22);
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--cream-dark);
+      color: var(--text);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .header {
+      background:
+        radial-gradient(
+          circle at top center,
+          rgba(244, 207, 126, 0.12),
+          transparent 38%
+        ),
+        linear-gradient(
+          135deg,
+          var(--primary),
+          var(--primary-light)
+        );
+
+      color: var(--white);
+      padding: 18px 20px;
+      box-shadow: 0 3px 14px rgba(32, 14, 43, 0.18);
+    }
+
+    .header-inner {
+      align-items: center;
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      margin: 0 auto;
+      max-width: 1080px;
+    }
+
+    .brand {
+      min-width: 0;
+    }
+
+    .brand-title {
+      color: var(--gold-light);
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
+    .brand-subtitle {
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 13px;
+      margin-top: 2px;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      border: 1px solid rgba(244, 207, 126, 0.25);
+      border-radius: 18px;
+      color: var(--gold-light);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 7px 11px;
+      transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .nav a:hover {
+      background: rgba(255, 255, 255, 0.08);
+      transform: translateY(-1px);
+    }
+
+    .hero {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(255, 249, 238, 0.98),
+          rgba(247, 242, 232, 1)
+        );
+
+      padding: 72px 20px 54px;
+      text-align: center;
+    }
+
+    .hero-inner {
+      margin: 0 auto;
+      max-width: 780px;
+    }
+
+    .hero-mark {
+      align-items: center;
+      background: rgba(215, 154, 39, 0.11);
+      border: 1px solid rgba(215, 154, 39, 0.28);
+      border-radius: 50%;
+      color: var(--primary);
+      display: inline-flex;
+      font-size: 30px;
+      height: 64px;
+      justify-content: center;
+      margin-bottom: 18px;
+      width: 64px;
+    }
+
+    .hero h1 {
+      color: var(--primary);
+      font-size: clamp(30px, 5vw, 48px);
+      font-weight: 850;
+      letter-spacing: -0.5px;
+    }
+
+    .hero-mantra {
+      color: #8d5f20;
+      font-size: 14px;
+      font-weight: 700;
+      margin-top: 6px;
+    }
+
+    .hero-description {
+      color: var(--text-secondary);
+      font-size: 16px;
+      margin: 18px auto 0;
+      max-width: 680px;
+    }
+
+    .official-badge {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      color: var(--primary);
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 800;
+      margin-top: 22px;
+      padding: 8px 14px;
+    }
+
+    .section {
+      padding: 48px 20px;
+    }
+
+    .section-inner {
+      margin: 0 auto;
+      max-width: 1080px;
+    }
+
+    .section-title {
+      color: var(--primary);
+      font-size: 25px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .section-subtitle {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin: 7px auto 26px;
+      max-width: 650px;
+      text-align: center;
+    }
+
+    .card-grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+    }
+
+    .card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 5px 16px rgba(48, 28, 54, 0.05);
+      display: flex;
+      flex-direction: column;
+      min-height: 190px;
+      padding: 20px;
+      transition:
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 24px rgba(48, 28, 54, 0.09);
+      transform: translateY(-3px);
+    }
+
+    .card-icon {
+      align-items: center;
+      background: rgba(91, 42, 134, 0.08);
+      border-radius: 12px;
+      color: var(--primary);
+      display: flex;
+      font-size: 22px;
+      height: 42px;
+      justify-content: center;
+      margin-bottom: 14px;
+      width: 42px;
+    }
+
+    .card h2 {
+      color: var(--primary);
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    .card p {
+      color: var(--text-secondary);
+      flex: 1;
+      font-size: 13px;
+      margin-top: 6px;
+    }
+
+    .card-link {
+      color: #8b5b16;
+      font-size: 12px;
+      font-weight: 800;
+      margin-top: 14px;
+    }
+
+    .about-strip {
+      background: var(--primary);
+      color: var(--white);
+      padding: 42px 20px;
+    }
+
+    .about-strip-inner {
+      margin: 0 auto;
+      max-width: 820px;
+      text-align: center;
+    }
+
+    .about-strip h2 {
+      color: var(--gold-light);
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .about-strip p {
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .footer {
+      background: #261038;
+      color: rgba(255, 255, 255, 0.74);
+      padding: 26px 20px;
+    }
+
+    .footer-inner {
+      margin: 0 auto;
+      max-width: 1080px;
+      text-align: center;
+    }
+
+    .footer-brand {
+      color: var(--gold-light);
+      font-size: 15px;
+      font-weight: 800;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      justify-content: center;
+      margin-top: 12px;
+    }
+
+    .footer-links a {
+      font-size: 12px;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .copyright {
+      font-size: 11px;
+      margin-top: 14px;
+    }
+
+    @media (max-width: 850px) {
+      .card-grid {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 620px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav {
+        justify-content: flex-start;
+      }
+
+      .hero {
+        padding-top: 52px;
+      }
+
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+
+      <div class="brand">
+        <div class="brand-title">
+          Tarni Panchang
+        </div>
+
+        <div class="brand-subtitle">
+          तरणी पंचांग
+        </div>
+      </div>
+
+      <nav
+        aria-label="Legal and support navigation"
+        class="nav"
+      >
+        <a href="./privacy-policy.html">
+          Privacy Policy
+        </a>
+
+        <a href="./terms.html">
+          Terms & Conditions
+        </a>
+
+        <a href="./about.html">
+          About Us
+        </a>
+
+        <a href="./contact.html">
+          Contact Us
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-inner">
+
+        <div
+          aria-hidden="true"
+          class="hero-mark"
+        >
+          ॐ
+        </div>
+
+        <h1>
+          Tarni Panchang
+        </h1>
+
+        <div class="hero-mantra">
+          ॥ श्री गणेशाय नमः ॥
+        </div>
+
+        <p class="hero-description">
+          Tarni Panchang is a location-aware Panchang application
+          designed to provide daily Hindu calendar and Panchang
+          information through on-device calculations.
+        </p>
+
+        <div class="official-badge">
+          Official Tarni Panchang Website
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+
+        <h2 class="section-title">
+          Information & Policies
+        </h2>
+
+        <p class="section-subtitle">
+          Access official information, privacy details,
+          terms of use and support information for Tarni Panchang.
+        </p>
+
+        <div class="card-grid">
+
+          <a
+            class="card"
+            href="./privacy-policy.html"
+          >
+            <div class="card-icon">
+              🔐
+            </div>
+
+            <h2>
+              Privacy Policy
+            </h2>
+
+            <p>
+              Learn how Tarni Panchang handles app permissions,
+              location information, advertising and privacy.
+            </p>
+
+            <div class="card-link">
+              View Privacy Policy →
+            </div>
+          </a>
+
+          <a
+            class="card"
+            href="./terms.html"
+          >
+            <div class="card-icon">
+              📄
+            </div>
+
+            <h2>
+              Terms & Conditions
+            </h2>
+
+            <p>
+              Read the terms and conditions governing the use
+              of Tarni Panchang.
+            </p>
+
+            <div class="card-link">
+              View Terms →
+            </div>
+          </a>
+
+          <a
+            class="card"
+            href="./about.html"
+          >
+            <div class="card-icon">
+              ✨
+            </div>
+
+            <h2>
+              About Us
+            </h2>
+
+            <p>
+              Learn more about Tarni Panchang,
+              its purpose and its approach to Panchang calculations.
+            </p>
+
+            <div class="card-link">
+              About Tarni →
+            </div>
+          </a>
+
+          <a
+            class="card"
+            href="./contact.html"
+          >
+            <div class="card-icon">
+              ✉️
+            </div>
+
+            <h2>
+              Contact Us
+            </h2>
+
+            <p>
+              Find official contact information for questions,
+              feedback, privacy requests and support.
+            </p>
+
+            <div class="card-link">
+              Contact Tarni →
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="about-strip">
+      <div class="about-strip-inner">
+
+        <h2>
+          Tarni Panchang
+        </h2>
+
+        <p>
+          Built with a focus on convenient,
+          location-aware Panchang information and
+          a simple user experience.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        Tarni Panchang
+      </div>
+
+      <div class="footer-links">
+
+        <a href="./privacy-policy.html">
+          Privacy Policy
+        </a>
+
+        <a href="./terms.html">
+          Terms & Conditions
+        </a>
+
+        <a href="./about.html">
+          About Us
+        </a>
+
+        <a href="./contact.html">
+          Contact Us
+        </a>
+
+      </div>
+
+      <div class="copyright">
+        © 2026 Tarni Panchang. All rights reserved.
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
