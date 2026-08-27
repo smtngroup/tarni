@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="About Tarni Panchang - an offline-first Panchang application providing location-based Hindu calendar and Panchang information."
+  />
+
+  <meta name="theme-color" content="#35154F" />
+
+  <title>About Us | Tarni Panchang</title>
+
+  <style>
+    :root {
+      --primary: #35154f;
+      --primary-light: #5b2a86;
+      --gold: #d79a27;
+      --gold-light: #f4cf7e;
+      --cream: #fff9ee;
+      --cream-dark: #f7f2e8;
+      --text: #4b3d50;
+      --text-secondary: #756878;
+      --border: rgba(181, 125, 52, 0.22);
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--cream-dark);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .header {
+      background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-light)
+      );
+      color: var(--white);
+      padding: 18px 20px;
+    }
+
+    .header-inner {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      max-width: 980px;
+    }
+
+    .brand {
+      color: var(--gold-light);
+      font-size: 21px;
+      font-weight: 800;
+    }
+
+    .home-link {
+      border: 1px solid rgba(244, 207, 126, 0.3);
+      border-radius: 18px;
+      color: var(--gold-light);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 7px 12px;
+    }
+
+    .hero {
+      background: var(--cream);
+      border-bottom: 1px solid var(--border);
+      padding: 42px 20px 34px;
+      text-align: center;
+    }
+
+    .hero-symbol {
+      color: var(--gold);
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+
+    .hero h1 {
+      color: var(--primary);
+      font-size: 32px;
+      font-weight: 850;
+    }
+
+    .hero p {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin: 7px auto 0;
+      max-width: 620px;
+    }
+
+    .content {
+      margin: 28px auto 50px;
+      max-width: 900px;
+      padding: 0 18px;
+    }
+
+    .card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 6px 22px rgba(49, 28, 53, 0.06);
+      padding: 26px;
+    }
+
+    .language-title {
+      color: var(--primary);
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    h2 {
+      color: var(--primary);
+      font-size: 17px;
+      font-weight: 800;
+      margin-top: 23px;
+    }
+
+    p {
+      margin-top: 8px;
+    }
+
+    .highlight {
+      background: rgba(215, 154, 39, 0.09);
+      border: 1px solid rgba(215, 154, 39, 0.25);
+      border-radius: 12px;
+      margin-top: 14px;
+      padding: 14px;
+    }
+
+    .features {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 14px;
+    }
+
+    .feature {
+      background: #fffdf8;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 13px;
+    }
+
+    .feature strong {
+      color: var(--primary);
+      display: block;
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+
+    .feature span {
+      color: var(--text-secondary);
+      font-size: 12px;
+    }
+
+    .divider {
+      background: var(--border);
+      height: 1px;
+      margin: 36px 0;
+    }
+
+    .email {
+      color: var(--primary);
+      font-weight: 800;
+      word-break: break-word;
+    }
+
+    .footer {
+      background: #261038;
+      color: rgba(255, 255, 255, 0.75);
+      padding: 24px 20px;
+      text-align: center;
+    }
+
+    .footer a {
+      color: var(--gold-light);
+      font-size: 12px;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        border-radius: 14px;
+        padding: 18px;
+      }
+
+      .hero h1 {
+        font-size: 26px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">Tarni Panchang</div>
+
+      <a class="home-link" href="./index.html">
+        Home
+      </a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-symbol">॥ ॐ ॥</div>
+
+    <h1>About Tarni Panchang</h1>
+
+    <p>
+      A modern, location-based and offline-first Panchang
+      application built for everyday use.
+    </p>
+  </section>
+
+  <main class="content">
+    <article class="card">
+
+      <!-- HINDI -->
+
+      <section lang="hi">
+
+        <div class="language-title">
+          हमारे बारे में
+        </div>
+
+        <div class="highlight">
+          <strong>तरणी पंचांग</strong> एक आधुनिक, सरल और
+          location-based भारतीय पंचांग ऐप है, जिसका उद्देश्य
+          दैनिक पंचांग जानकारी को उपयोगकर्ताओं तक स्पष्ट और
+          सुविधाजनक रूप में पहुँचाना है।
+        </div>
+
+        <h2>हमारा उद्देश्य</h2>
+
+        <p>
+          हमारा उद्देश्य पारंपरिक पंचांग ज्ञान और आधुनिक
+          astronomical calculation को एक उपयोगी digital experience
+          में प्रस्तुत करना है।
+        </p>
+
+        <p>
+          तरणी पंचांग को इस तरह विकसित किया जा रहा है कि उपयोगकर्ता
+          अपने स्थान के अनुसार दैनिक पंचांग और महत्वपूर्ण समय आसानी
+          से देख सकें।
+        </p>
+
+        <h2>तरणी पंचांग में क्या मिलेगा?</h2>
+
+        <div class="features">
+
+          <div class="feature">
+            <strong>दैनिक पंचांग</strong>
+            <span>
+              तिथि, नक्षत्र, योग, करण, पक्ष और अन्य पंचांग अंग।
+            </span>
+          </div>
+
+          <div class="feature">
+            <strong>सूर्य एवं चंद्र समय</strong>
+            <span>
+              सूर्योदय, सूर्यास्त, चंद्रोदय और चंद्रास्त।
+            </span>
+          </div>
+
+          <div class="feature">
+            <strong>शुभ-अशुभ समय</strong>
+            <span>
+              मुहूर्त, राहुकाल, यमगण्ड, गुलिक और चौघड़िया।
+            </span>
+          </div>
+
+          <div class="feature">
+            <strong>धार्मिक जानकारी</strong>
+            <span>
+              पंचक, भद्रा तथा अन्य समर्थित पंचांग स्थितियाँ।
+            </span>
+          </div>
+
+          <div class="feature">
+            <strong>स्थान आधारित गणना</strong>
+            <span>
+              उपयोगकर्ता की latitude, longitude और timezone के
+              अनुसार Panchang calculation।
+            </span>
+          </div>
+
+          <div class="feature">
+            <strong>अलग गणना पद्धतियाँ</strong>
+            <span>
+              समर्थित अयनांश और Panchang calculation profiles।
+            </span>
+          </div>
+
+        </div>
+
+        <h2>Offline-First तकनीक</h2>
+
+        <p>
+          तरणी पंचांग का core Panchang engine device पर local
+          calculation करने के लिए बनाया गया है। इससे core Panchang
+          calculations के लिए लगातार किसी remote Panchang API पर
+          निर्भर रहने की आवश्यकता कम होती है।
+        </p>
+
+        <p>
+          कुछ optional सुविधाओं जैसे advertisements, readable
+          location-name lookup या voice-related services के लिए
+          internet की आवश्यकता हो सकती है।
+        </p>
+
+        <h2>भाषाएँ</h2>
+
+        <p>
+          तरणी पंचांग को भारत के अलग-अलग क्षेत्रों के उपयोगकर्ताओं
+          तक पहुँचाने के उद्देश्य से अनेक भारतीय भाषाओं के support
+          के साथ विकसित किया जा रहा है।
+        </p>
+
+        <h2>हमारी प्राथमिकता</h2>
+
+        <p>
+          हमारी प्राथमिकता है कि Tarni Panchang तेज़, सरल,
+          privacy-conscious और उपयोगी रहे तथा Panchang calculations
+          को स्पष्ट रूप में प्रस्तुत करे।
+        </p>
+
+        <h2>संपर्क</h2>
+
+        <div class="highlight">
+          Tarni Panchang से संबंधित प्रश्न, feedback या support के
+          लिए:
+          <br />
+
+          <a
+            class="email"
+            href="mailto:support.tarnipanchang@gmail.com"
+          >
+            support.tarnipanchang@gmail.com
+          </a>
+        </div>
+
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- ENGLISH -->
+
+      <section lang="en">
+
+        <div class="language-title">
+          About Us — English
+        </div>
+
+        <div class="highlight">
+          <strong>Tarni Panchang</strong> is a modern, simple and
+          location-based Indian Panchang application designed to
+          make daily Panchang information easy to access and
+          understand.
+        </div>
+
+        <h2>Our Purpose</h2>
+
+        <p>
+          Our goal is to bring traditional Panchang knowledge and
+          modern astronomical calculations together in a useful
+          digital experience.
+        </p>
+
+        <p>
+          Tarni Panchang is being developed so users can easily
+          access daily Panchang information and important timings
+          according to their location.
+        </p>
+
+        <h2>What Tarni Panchang Provides</h2>
+
+        <div class="features">
+
+          <div class="feature">
+            <strong>Daily Panchang</strong>
+            <span>
+              Tithi, Nakshatra, Yoga, Karana, Paksha and other
+              Panchang elements.
+            </span>
+          </div>
+
+          <div class="feature">
+            <strong>Sun & Moon Timings</strong>
+            <span>
+              Sunrise, sunset, moonrise and moonset.
+            </span>
+          </div>
+
+          <div class="feature">
+            <strong>Important Timings</strong>
+            <span>
+              Muhurta, Rahu Kaal, Yamaganda, Gulika and
+              Choghadiya.
+            </span>
+          </div>
+
+          <div class="feature">
+            <strong>Religious Information</strong>
+            <span>
+              Panchak, Bhadra and other supported Panchang
+              conditions.
+            </span>
+          </div>
+
+          <div class="feature">
+            <strong>Location-Based Calculation</strong>
+            <span>
+              Panchang calculation according to latitude,
+              longitude and timezone.
+            </span>
+          </div>
+
+          <div class="feature">
+            <strong>Calculation Profiles</strong>
+            <span>
+              Support for available Ayanamsha and Panchang
+              calculation profiles.
+            </span>
+          </div>
+
+        </div>
+
+        <h2>Offline-First Technology</h2>
+
+        <p>
+          The core Tarni Panchang engine is designed to perform
+          Panchang calculations locally on the user's device. This
+          reduces the need to depend continuously on a remote
+          Panchang API for core calculations.
+        </p>
+
+        <p>
+          Some optional features, including advertisements,
+          readable location-name lookup or voice-related services,
+          may require internet access.
+        </p>
+
+        <h2>Languages</h2>
+
+        <p>
+          Tarni Panchang is being developed with support for
+          multiple Indian languages to make the application useful
+          to people across different regions of India.
+        </p>
+
+        <h2>Our Priority</h2>
+
+        <p>
+          Our priority is to keep Tarni Panchang fast, simple,
+          privacy-conscious and useful while presenting Panchang
+          calculations clearly.
+        </p>
+
+        <h2>Contact</h2>
+
+        <div class="highlight">
+          For questions, feedback or support related to Tarni
+          Panchang:
+          <br />
+
+          <a
+            class="email"
+            href="mailto:support.tarnipanchang@gmail.com"
+          >
+            support.tarnipanchang@gmail.com
+          </a>
+        </div>
+
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div>
+      © 2026 Tarni Panchang. All rights reserved.
+    </div>
+
+    <div style="margin-top: 7px;">
+      <a href="./index.html">
+        Back to Official Website
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
